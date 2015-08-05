@@ -1,0 +1,11 @@
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView1"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="left"
+    android:paddingTop="8dp"
+    android:text="Test"
+    android:background="#424242"
+    android:textSize="14sp"
+    android:textStyle="bold" />

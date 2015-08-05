@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.vtn.fastfoodcalorie" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FoodDetail"
+            android:label="@string/title_activity_food_detail" >
+        </activity>
+        <activity
+            android:name=".CalculatorBMR"
+            android:label="@string/title_activity_calculator_bmr" >
+        </activity>
+        <activity
+            android:name=".Goal"
+            android:label="@string/title_activity_goal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".Weight_Goal"
+            android:label="@string/title_activity_weight__goal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Goal"
+                />
+        </activity>
+        <activity
+            android:name=".Activity_Level"
+            android:label="@string/title_activity_activity__level" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Goal"
+                />
+        </activity>
+        <activity
+            android:name=".You"
+            android:label="@string/title_activity_you" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity_Level"
+                />
+        </activity>
+        <activity
+            android:name=".Height_Goal"
+            android:label="@string/title_activity_height__goal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".You"
+                />
+        </activity>
+        <activity
+            android:name=".Detail"
+            android:label="@string/title_activity_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Height_Goal"
+                />
+        </activity>
+    </application>
+
+</manifest>

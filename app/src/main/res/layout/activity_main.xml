@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:background="#EEEEEE">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select a Restaurant"
+        android:id="@+id/textView"
+        android:textColor="#FAFAFA"
+        android:background="#212121"/>
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:hint="Search Restaurant.."/>
+
+   <GridView
+       android:id="@+id/grid"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:verticalSpacing="5px"
+       android:horizontalSpacing="5px"
+       android:numColumns="2"
+       android:columnWidth="300px"
+       android:stretchMode="columnWidth"
+       android:gravity="center"></GridView>
+</LinearLayout>
